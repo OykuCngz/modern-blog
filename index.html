@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern blog platformu - Teknoloji, tasarım ve yazılım dünyasından en son haberler ve makaleler">
+    <title>Insight - Modern Blog Platformu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <div class="logo-icon">📝</div>
+                    <span>Insight</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#" class="active">For You</a></li>
+                    <li><a href="#">Following</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">UX Design</a></li>
+                    <li><a href="#">Productivity</a></li>
+                    <li><a href="#">Politics</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="search-input" placeholder="Search topics...">
+                    </div>
+                    <button class="btn btn-primary">✍️ Write</button>
+                    <button class="btn btn-ghost">🔔</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-card fade-in-up">
+                <img src="images/ai-design.png" alt="AI Design" class="hero-image">
+                <div class="hero-content">
+                    <div class="author-info">
+                        <div class="author-avatar"></div>
+                        <div class="author-details">
+                            <div class="author-name">Jane Doe</div>
+                            <div class="post-date">Oct 24 • 3 min read</div>
+                        </div>
+                    </div>
+                    <h1 class="hero-title">Understanding the Future of AI Design</h1>
+                    <p class="hero-excerpt">
+                        How artificial intelligence is reshaping the way we think about user interfaces and experiences, 
+                        and why designers need to adapt now. A comprehensive guide to modern AI-driven design principles 
+                        and their practical applications in real-world projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content container">
+        <!-- Articles Section -->
+        <div class="articles-section">
+            <div class="category-tabs">
+                <button class="category-tab active">All</button>
+                <button class="category-tab">Programming</button>
+                <button class="category-tab">Design</button>
+                <button class="category-tab">Marketing</button>
+                <button class="category-tab">Productivity</button>
+                <button class="category-tab">Tech</button>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card fade-in-up">
+                    <img src="images/programming.png" alt="Programming" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <div class="article-meta">
+                                <span class="article-category">Programming</span>
+                                <span class="read-time">• 8 min read</span>
+                            </div>
+                            <h3 class="article-title">Why Rust is the Future of Systems Programming</h3>
+                            <p class="article-excerpt">
+                                Rust has been the most loved programming language for seven years in a row. 
+                                Here is a deep dive into memory safety, concurrency, and why big tech is switching.
+                            </p>
+                        </div>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar"></div>
+                                <span class="article-author-name">Robert Fox • Nov 2</span>
+                            </div>
+                            <div class="article-actions">
+                                <button class="action-btn">❤️ 2.4K</button>
+                                <button class="action-btn">💬 47</button>
+                                <button class="action-btn">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card fade-in-up">
+                    <img src="images/colors.png" alt="Color Psychology" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <div class="article-meta">
+                                <span class="article-category">Marketing</span>
+                                <span class="read-time">• 4 min read</span>
+                            </div>
+                            <h3 class="article-title">The Psychology of Colors in Marketing</h3>
+                            <p class="article-excerpt">
+                                Why certain colors evoke specific emotions and how brands use this to their advantage. 
+                                A comprehensive guide to color theory in 2024.
+                            </p>
+                        </div>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar"></div>
+                                <span class="article-author-name">Marketing Weekly • Oct 29</span>
+                            </div>
+                            <div class="article-actions">
+                                <button class="action-btn">❤️ 1.8K</button>
+                                <button class="action-btn">💬 32</button>
+                                <button class="action-btn">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card fade-in-up">
+                    <img src="images/remote-work.png" alt="Remote Work" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <div class="article-meta">
+                                <span class="article-category">Productivity</span>
+                                <span class="read-time">• 5 min read</span>
+                            </div>
+                            <h3 class="article-title">10 Tips for Remote Work Productivity</h3>
+                            <p class="article-excerpt">
+                                Discover how to stay focused and maintain a healthy work-life balance while working from home. 
+                                From setting boundaries to optimizing your workspace.
+                            </p>
+                        </div>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar"></div>
+                                <span class="article-author-name">Cameron Williamson • Oct 21</span>
+                            </div>
+                            <div class="article-actions">
+                                <button class="action-btn">❤️ 3.2K</button>
+                                <button class="action-btn">💬 64</button>
+                                <button class="action-btn">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card fade-in-up">
+                    <img src="images/ai-design.png" alt="Web Innovation" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <div class="article-meta">
+                                <span class="article-category">Tech</span>
+                                <span class="read-time">• 8 min read</span>
+                            </div>
+                            <h3 class="article-title">The decline of the open web and the rise of walled gardens</h3>
+                            <p class="article-excerpt">
+                                An opinion piece on how major platforms are closing off their APIs and what this means 
+                                for the future of internet freedom and innovation.
+                            </p>
+                        </div>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar"></div>
+                                <span class="article-author-name">Joseph Martinez • Oct 15</span>
+                            </div>
+                            <div class="article-actions">
+                                <button class="action-btn">❤️ 2.1K</button>
+                                <button class="action-btn">💬 89</button>
+                                <button class="action-btn">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card fade-in-up">
+                    <img src="images/programming.png" alt="Design Systems" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <div class="article-meta">
+                                <span class="article-category">Design</span>
+                                <span class="read-time">• 12 min read</span>
+                            </div>
+                            <h3 class="article-title">Building Scalable Design Systems in 2024</h3>
+                            <p class="article-excerpt">
+                                A practical guide to creating and maintaining design systems that grow with your product. 
+                                Learn from top companies like Airbnb and Shopify.
+                            </p>
+                        </div>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar"></div>
+                                <span class="article-author-name">Sarah Chen • Oct 12</span>
+                            </div>
+                            <div class="article-actions">
+                                <button class="action-btn">❤️ 4.5K</button>
+                                <button class="action-btn">💬 112</button>
+                                <button class="action-btn">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card fade-in-up">
+                    <img src="images/colors.png" alt="CSS Grid" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <div class="article-meta">
+                                <span class="article-category">Programming</span>
+                                <span class="read-time">• 6 min read</span>
+                            </div>
+                            <h3 class="article-title">Mastering CSS Grid in 2024</h3>
+                            <p class="article-excerpt">
+                                Grid layout has changed the web. Here are the advanced techniques you need to know 
+                                to build complex, responsive layouts with ease.
+                            </p>
+                        </div>
+                        <div class="article-footer">
+                            <div class="article-author">
+                                <div class="article-author-avatar"></div>
+                                <span class="article-author-name">Alex Thompson • Oct 8</span>
+                            </div>
+                            <div class="article-actions">
+                                <button class="action-btn">❤️ 3.7K</button>
+                                <button class="action-btn">💬 54</button>
+                                <button class="action-btn">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Trending -->
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <span>🔥</span>
+                    <h3 class="sidebar-title">Trending on Insight</h3>
+                </div>
+                <div class="trending-list">
+                    <div class="trending-item">
+                        <div class="trending-number">01</div>
+                        <div class="trending-content">
+                            <div class="trending-author">
+                                <div class="trending-author-avatar"></div>
+                                <span class="trending-author-name">Arthur Black</span>
+                            </div>
+                            <h4 class="trending-title">I built a SaaS in 2 weeks</h4>
+                            <div class="trending-meta">Oct 24 • 3 min read</div>
+                        </div>
+                    </div>
+
+                    <div class="trending-item">
+                        <div class="trending-number">02</div>
+                        <div class="trending-content">
+                            <div class="trending-author">
+                                <div class="trending-author-avatar"></div>
+                                <span class="trending-author-name">Dev Daily</span>
+                            </div>
+                            <h4 class="trending-title">Stop using 'useEffect' for data fetching</h4>
+                            <div class="trending-meta">Oct 28 • 5 min read</div>
+                        </div>
+                    </div>
+
+                    <div class="trending-item">
+                        <div class="trending-number">03</div>
+                        <div class="trending-content">
+                            <div class="trending-author">
+                                <div class="trending-author-avatar"></div>
+                                <span class="trending-author-name">Sarah Jenkins</span>
+                            </div>
+                            <h4 class="trending-title">My journey to Senior Product Designer</h4>
+                            <div class="trending-meta">Oct 22 • 9 min read</div>
+                        </div>
+                    </div>
+
+                    <div class="trending-item">
+                        <div class="trending-number">04</div>
+                        <div class="trending-content">
+                            <div class="trending-author">
+                                <div class="trending-author-avatar"></div>
+                                <span class="trending-author-name">Tech Insights</span>
+                            </div>
+                            <h4 class="trending-title">The AI revolution is here</h4>
+                            <div class="trending-meta">Oct 20 • 7 min read</div>
+                        </div>
+                    </div>
+
+                    <div class="trending-item">
+                        <div class="trending-number">05</div>
+                        <div class="trending-content">
+                            <div class="trending-author">
+                                <div class="trending-author-avatar"></div>
+                                <span class="trending-author-name">Code Masters</span>
+                            </div>
+                            <h4 class="trending-title">10 JavaScript tricks you should know</h4>
+                            <div class="trending-meta">Oct 18 • 4 min read</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended Topics -->
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <h3 class="sidebar-title">Recommended topics</h3>
+                </div>
+                <div class="topics-list">
+                    <span class="topic-tag">Machine Learning</span>
+                    <span class="topic-tag">Self Improvement</span>
+                    <span class="topic-tag">Writing</span>
+                    <span class="topic-tag">Business</span>
+                    <span class="topic-tag">History</span>
+                    <span class="topic-tag">Web Dev</span>
+                </div>
+                <a href="#" style="color: var(--accent-blue); font-size: 0.875rem; margin-top: var(--spacing-md); display: inline-block;">See more topics</a>
+            </div>
+
+            <!-- Who to Follow -->
+            <div class="sidebar-section">
+                <div class="sidebar-header">
+                    <h3 class="sidebar-title">Who to follow</h3>
+                </div>
+                <div class="follow-suggestions">
+                    <div class="follow-item">
+                        <div class="follow-avatar"></div>
+                        <div class="follow-info">
+                            <div class="follow-name">Alex Morgan</div>
+                            <div class="follow-title">Data Scientist @ Google</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+
+                    <div class="follow-item">
+                        <div class="follow-avatar"></div>
+                        <div class="follow-info">
+                            <div class="follow-name">Emily Chen</div>
+                            <div class="follow-title">Writing about AI & Tech</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+
+                    <div class="follow-item">
+                        <div class="follow-avatar"></div>
+                        <div class="follow-info">
+                            <div class="follow-name">David Miller</div>
+                            <div class="follow-title">Entrepreneur, Writer</div>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+                <a href="#" style="color: var(--accent-blue); font-size: 0.875rem; margin-top: var(--spacing-md); display: inline-block;">See all suggestions</a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Writers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Insight. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">𝕏</a>
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">fb</a>
+                    <a href="#" class="social-link">ig</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

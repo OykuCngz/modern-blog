@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Understanding the Future of AI Design - How artificial intelligence is reshaping user interfaces">
+    <title>Understanding the Future of AI Design | Insight</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .article-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+        }
+
+        .article-header-page {
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .article-header-page .article-title {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.1;
+        }
+
+        .article-header-page .article-meta {
+            font-size: 1rem;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .author-profile {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-lg);
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .author-profile-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--accent-gradient);
+        }
+
+        .author-profile-info h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .article-body {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .article-body h2 {
+            color: var(--text-primary);
+            margin-top: var(--spacing-2xl);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .article-body p {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .article-body img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            margin: var(--spacing-xl) 0;
+        }
+
+        .article-body blockquote {
+            border-left: 4px solid var(--accent-blue);
+            padding-left: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+            font-style: italic;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+        }
+
+        .article-body code {
+            background: var(--bg-secondary);
+            padding: 0.2em 0.4em;
+            border-radius: var(--radius-sm);
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .article-actions-bar {
+            position: sticky;
+            top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            position: fixed;
+            left: calc(50% - 450px);
+            top: 200px;
+        }
+
+        .action-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+
+        .action-circle:hover {
+            background: var(--bg-hover);
+            transform: scale(1.1);
+        }
+
+        .related-articles {
+            margin-top: var(--spacing-2xl);
+            padding-top: var(--spacing-2xl);
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 968px) {
+            .article-actions-bar {
+                position: static;
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: var(--spacing-xl);
+            }
+
+            .article-header-page .article-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">📝</div>
+                    <span>Insight</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="active">Article</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">UX Design</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="search-input" placeholder="Search...">
+                    </div>
+                    <button class="btn btn-primary">✍️ Write</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-page">
+        <!-- Side Actions Bar -->
+        <div class="article-actions-bar">
+            <button class="action-circle">❤️</button>
+            <button class="action-circle">💬</button>
+            <button class="action-circle">🔖</button>
+            <button class="action-circle">🔗</button>
+        </div>
+
+        <div class="article-header-page">
+            <h1 class="article-title">Understanding the Future of AI Design</h1>
+            <div class="article-meta">
+                <span class="article-category">AI Design</span>
+                <span class="read-time">• 8 min read • Oct 24, 2024</span>
+            </div>
+        </div>
+
+        <div class="author-profile">
+            <div class="author-profile-avatar"></div>
+            <div class="author-profile-info">
+                <h3>Jane Doe</h3>
+                <p style="color: var(--text-muted); margin: 0;">Senior UX Designer @ TechCorp | AI Enthusiast</p>
+            </div>
+            <button class="follow-btn" style="margin-left: auto;">Follow</button>
+        </div>
+
+        <img src="images/ai-design.png" alt="AI Design"
+            style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--spacing-xl);">
+
+        <div class="article-body">
+            <p>
+                Artificial intelligence is fundamentally transforming how we approach design. From automated layout
+                suggestions
+                to intelligent color palette generation, AI tools are becoming an integral part of the designer's
+                toolkit.
+                But what does this mean for the future of our profession?
+            </p>
+
+            <h2>The AI Revolution in Design</h2>
+
+            <p>
+                We're witnessing an unprecedented shift in the design industry. AI-powered tools like Midjourney,
+                DALL-E,
+                and Stable Diffusion have demonstrated that machines can generate stunning visuals in seconds.
+                Meanwhile,
+                tools like Figma's AI features are streamlining our workflow in ways we never imagined.
+            </p>
+
+            <blockquote>
+                "AI won't replace designers, but designers who use AI will replace those who don't."
+            </blockquote>
+
+            <p>
+                This quote encapsulates the current moment perfectly. The question isn't whether to embrace AI, but how
+                to
+                leverage it effectively while maintaining our creative vision and human-centered approach.
+            </p>
+
+            <h2>Key Areas of Impact</h2>
+
+            <p>
+                <strong>1. Automated Design Systems</strong><br>
+                AI can now generate comprehensive design systems based on brand guidelines, creating consistent
+                components across platforms. This frees designers to focus on strategic decisions rather than
+                repetitive tasks.
+            </p>
+
+            <p>
+                <strong>2. Predictive UX</strong><br>
+                Machine learning algorithms analyze user behavior patterns to predict optimal layouts, navigation
+                structures, and interaction patterns. This data-driven approach complements our intuition and
+                experience.
+            </p>
+
+            <p>
+                <strong>3. Accessibility Enhancement</strong><br>
+                AI tools can automatically check designs for accessibility issues, suggest improvements, and even
+                generate alternative versions optimized for different user needs.
+            </p>
+
+            <h2>The Human Element</h2>
+
+            <p>
+                Despite these advances, the core of great design remains deeply human. Empathy, creativity, and
+                strategic thinking are qualities that AI cannot replicate. Our role is evolving from pure execution
+                to strategic direction and creative vision.
+            </p>
+
+            <p>
+                The most successful designers of tomorrow will be those who can harness AI as a powerful assistant
+                while bringing irreplaceable human insight to the table. They'll understand both the capabilities
+                and limitations of AI tools, using them to enhance rather than replace their creativity.
+            </p>
+
+            <h2>Practical Steps Forward</h2>
+
+            <p>
+                So how can we prepare for this AI-augmented future? Here are some concrete steps:
+            </p>
+
+            <ul style="margin: var(--spacing-lg) 0; padding-left: var(--spacing-xl);">
+                <li style="margin-bottom: var(--spacing-sm);">Experiment with AI tools regularly to understand their
+                    strengths and weaknesses</li>
+                <li style="margin-bottom: var(--spacing-sm);">Focus on developing skills that complement AI: strategic
+                    thinking, user research, and storytelling</li>
+                <li style="margin-bottom: var(--spacing-sm);">Stay informed about AI developments in the design space
+                </li>
+                <li style="margin-bottom: var(--spacing-sm);">Build workflows that integrate AI tools seamlessly</li>
+            </ul>
+
+            <p>
+                The future of design isn't about humans versus AI—it's about humans and AI working together to
+                create experiences that are more intuitive, accessible, and delightful than ever before. By embracing
+                this partnership, we can push the boundaries of what's possible in digital design.
+            </p>
+
+            <p>
+                As we stand at this crossroads, the choices we make today will shape the design industry for decades
+                to come. Let's ensure we're creating a future where technology amplifies human creativity rather than
+                diminishing it.
+            </p>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="related-articles">
+            <h2>Related Articles</h2>
+            <div class="articles-grid" style="margin-top: var(--spacing-lg);">
+                <article class="article-card">
+                    <img src="images/programming.png" alt="Programming" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <div class="article-meta">
+                                <span class="article-category">Programming</span>
+                                <span class="read-time">• 8 min read</span>
+                            </div>
+                            <h3 class="article-title">Why Rust is the Future of Systems Programming</h3>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <img src="images/colors.png" alt="Design" class="article-image">
+                    <div class="article-content">
+                        <div class="article-header">
+                            <div class="article-meta">
+                                <span class="article-category">Design</span>
+                                <span class="read-time">• 12 min read</span>
+                            </div>
+                            <h3 class="article-title">Building Scalable Design Systems in 2024</h3>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Writers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Insight. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">𝕏</a>
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">fb</a>
+                    <a href="#" class="social-link">ig</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
