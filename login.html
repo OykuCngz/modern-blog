@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insight Blog - Giriş Yap">
+    <title>Giriş Yap - Insight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <div class="nav">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">📝</div>
+                    <span>Insight</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <div class="auth-card fade-in-up">
+            <div class="auth-header">
+                <h1>Tekrar Hoş Geldiniz!</h1>
+                <p>Hesabınıza giriş yapın ve okumaya devam edin</p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="ornek@email.com"
+                        required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="password" name="password" class="form-input" placeholder="••••••••"
+                            required>
+                        <button type="button" class="password-toggle" id="togglePassword">
+                            <span class="eye-icon">👁️</span>
+                        </button>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <span>Beni hatırla</span>
+                    </label>
+                    <a href="#" class="forgot-password">Şifremi unuttum?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    Giriş Yap
+                </button>
+
+                <div class="auth-divider">
+                    <span>veya</span>
+                </div>
+
+                <div class="auth-footer">
+                    <p>Hesabınız yok mu? <a href="signup.html" class="auth-link">Kayıt Olun</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="auth-decoration">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <div class="decoration-circle circle-3"></div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+
+</html>

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Modern blog platformu - Teknoloji, tasarım ve yazılım dünyasından en son haberler ve makaleler">
+    <meta name="description"
+        content="Modern blog platformu - Teknoloji, tasarım ve yazılım dünyasından en son haberler ve makaleler">
     <title>Insight - Modern Blog Platformu</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -16,7 +19,7 @@
                     <div class="logo-icon">📝</div>
                     <span>Insight</span>
                 </a>
-                
+
                 <ul class="nav-links">
                     <li><a href="#" class="active">For You</a></li>
                     <li><a href="#">Following</a></li>
@@ -25,13 +28,49 @@
                     <li><a href="#">Productivity</a></li>
                     <li><a href="#">Politics</a></li>
                 </ul>
-                
+
                 <div class="nav-actions">
                     <div class="search-box">
                         <span class="search-icon">🔍</span>
                         <input type="text" class="search-input" placeholder="Search topics...">
                     </div>
-                    <button class="btn btn-primary">✍️ Write</button>
+
+                    <!-- Auth Buttons (shown when not logged in) -->
+                    <div class="auth-buttons" id="authButtons" style="display: none;">
+                        <a href="login.html" class="btn btn-auth-login">
+                            <span class="btn-icon">🔐</span>
+                            <span>Giriş Yap</span>
+                        </a>
+                        <a href="signup.html" class="btn btn-auth-signup">
+                            <span class="btn-icon">✨</span>
+                            <span>Kayıt Ol</span>
+                        </a>
+                    </div>
+
+                    <!-- User Profile (shown when logged in) -->
+                    <div class="user-profile" id="userProfile" style="display: none;">
+                        <div class="user-profile-avatar" id="userAvatar"></div>
+                        <span class="user-profile-name" id="userName"></span>
+                        <span style="margin-left: 4px;">▼</span>
+
+                        <div class="user-dropdown" id="userDropdown">
+                            <div class="user-dropdown-item" onclick="window.location.href='#'">
+                                👤 Profilim
+                            </div>
+                            <div class="user-dropdown-item" onclick="window.location.href='#'">
+                                ✍️ Yazılarım
+                            </div>
+                            <div class="user-dropdown-item" onclick="window.location.href='#'">
+                                ⚙️ Ayarlar
+                            </div>
+                            <div class="user-dropdown-divider"></div>
+                            <div class="user-dropdown-item" id="logoutBtn">
+                                🚪 Çıkış Yap
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="writeBtn" style="display: none;">✍️ Write</button>
                     <button class="btn btn-ghost">🔔</button>
                 </div>
             </div>
@@ -53,8 +92,8 @@
                     </div>
                     <h1 class="hero-title">Understanding the Future of AI Design</h1>
                     <p class="hero-excerpt">
-                        How artificial intelligence is reshaping the way we think about user interfaces and experiences, 
-                        and why designers need to adapt now. A comprehensive guide to modern AI-driven design principles 
+                        How artificial intelligence is reshaping the way we think about user interfaces and experiences,
+                        and why designers need to adapt now. A comprehensive guide to modern AI-driven design principles
                         and their practical applications in real-world projects.
                     </p>
                 </div>
@@ -87,7 +126,7 @@
                             </div>
                             <h3 class="article-title">Why Rust is the Future of Systems Programming</h3>
                             <p class="article-excerpt">
-                                Rust has been the most loved programming language for seven years in a row. 
+                                Rust has been the most loved programming language for seven years in a row.
                                 Here is a deep dive into memory safety, concurrency, and why big tech is switching.
                             </p>
                         </div>
@@ -116,7 +155,7 @@
                             </div>
                             <h3 class="article-title">The Psychology of Colors in Marketing</h3>
                             <p class="article-excerpt">
-                                Why certain colors evoke specific emotions and how brands use this to their advantage. 
+                                Why certain colors evoke specific emotions and how brands use this to their advantage.
                                 A comprehensive guide to color theory in 2024.
                             </p>
                         </div>
@@ -145,7 +184,8 @@
                             </div>
                             <h3 class="article-title">10 Tips for Remote Work Productivity</h3>
                             <p class="article-excerpt">
-                                Discover how to stay focused and maintain a healthy work-life balance while working from home. 
+                                Discover how to stay focused and maintain a healthy work-life balance while working from
+                                home.
                                 From setting boundaries to optimizing your workspace.
                             </p>
                         </div>
@@ -174,7 +214,7 @@
                             </div>
                             <h3 class="article-title">The decline of the open web and the rise of walled gardens</h3>
                             <p class="article-excerpt">
-                                An opinion piece on how major platforms are closing off their APIs and what this means 
+                                An opinion piece on how major platforms are closing off their APIs and what this means
                                 for the future of internet freedom and innovation.
                             </p>
                         </div>
@@ -203,7 +243,8 @@
                             </div>
                             <h3 class="article-title">Building Scalable Design Systems in 2024</h3>
                             <p class="article-excerpt">
-                                A practical guide to creating and maintaining design systems that grow with your product. 
+                                A practical guide to creating and maintaining design systems that grow with your
+                                product.
                                 Learn from top companies like Airbnb and Shopify.
                             </p>
                         </div>
@@ -232,7 +273,7 @@
                             </div>
                             <h3 class="article-title">Mastering CSS Grid in 2024</h3>
                             <p class="article-excerpt">
-                                Grid layout has changed the web. Here are the advanced techniques you need to know 
+                                Grid layout has changed the web. Here are the advanced techniques you need to know
                                 to build complex, responsive layouts with ease.
                             </p>
                         </div>
@@ -336,7 +377,9 @@
                     <span class="topic-tag">History</span>
                     <span class="topic-tag">Web Dev</span>
                 </div>
-                <a href="#" style="color: var(--accent-blue); font-size: 0.875rem; margin-top: var(--spacing-md); display: inline-block;">See more topics</a>
+                <a href="#"
+                    style="color: var(--accent-blue); font-size: 0.875rem; margin-top: var(--spacing-md); display: inline-block;">See
+                    more topics</a>
             </div>
 
             <!-- Who to Follow -->
@@ -372,7 +415,9 @@
                         <button class="follow-btn">Follow</button>
                     </div>
                 </div>
-                <a href="#" style="color: var(--accent-blue); font-size: 0.875rem; margin-top: var(--spacing-md); display: inline-block;">See all suggestions</a>
+                <a href="#"
+                    style="color: var(--accent-blue); font-size: 0.875rem; margin-top: var(--spacing-md); display: inline-block;">See
+                    all suggestions</a>
             </div>
         </aside>
     </main>
@@ -433,4 +478,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
